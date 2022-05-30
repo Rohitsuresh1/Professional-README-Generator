@@ -1,5 +1,5 @@
 const inquirer=require('inquirer');
-const fs=require('fs');
+const { generateReadme, writeReadme}=require('./Develop/utils/generateReadme');
 
 
 const promptUser = () => {
@@ -62,7 +62,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'feature',
-            message: 'Feature anything in your project? '
+            message: 'Features of your project? '
         },
         {
             type: 'input',
@@ -73,11 +73,6 @@ const promptUser = () => {
 };
 
 
-promptUser().then(data=> { return generateReadme(data);});
 
-const generateReadme = data => {
- return `
- 
- 
- `;
-};
+promptUser().then(data=> { return generateReadme(data);}).then(readme=> {return writeReadme(readme)});
+
