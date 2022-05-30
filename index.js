@@ -57,7 +57,7 @@ const promptUser = () => {
             type: 'list',
             name: 'license',
             message: 'Please select the license you are using for the project',
-            choices: ['MIT','GNU','Apache','BSD','Other','None']
+            choices: ['MIT','Boost','Apache','BSD','Other','None']
         },
         {
             type: 'input',
@@ -68,6 +68,21 @@ const promptUser = () => {
             type: 'input',
             name: 'contribute',
             message: 'How to contribute to your project? '
+        },
+        {
+          type: 'input',
+          name: 'tests',
+          message: 'Any tests? '
+        },
+        {
+          type: 'input',
+          name: 'userName',
+          message: 'Username: '
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'email: '
         }
     ])
 };
