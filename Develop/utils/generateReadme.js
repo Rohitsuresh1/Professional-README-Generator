@@ -69,14 +69,6 @@ ${contentTable[5]}
 ${contentTable[6]}
 ${contentTable[7]}
 
-- [Installation](#inst)
-- [Usage](#usage)
-- [License](#license)
-- [How to Contribute](#contributing)
-- [Feature](#feature)
-- [Tests](#tests)
-- [Questions](#questions)
-- [Credits](#credits)
   `;
 }
 generateCredits=data=>{
@@ -92,8 +84,7 @@ else
 
 generateFeature=data=>{
   if (data.feature)
-  return `
-<a name="feature"></a>
+  return `<a name="feature"></a>
 ## Feature
 ${data.feature}
   `;
@@ -114,8 +105,7 @@ else
 
 generateTest=data=>{
   if (data.tests)
-  return `
-<a name="tests"></a>
+  return `<a name="tests"></a>
 ## Tests
 ${data.tests}
   `;
@@ -153,7 +143,7 @@ ${generateCredits(data)}
 };
 
 const writeReadme = data => {
-  return fs.writeFile('./develop/utils/README.md',data, err => { if (err) return err;});
+  return fs.writeFile('./develop/README.md',data, err => { if (err) return err;});
 };
 
 

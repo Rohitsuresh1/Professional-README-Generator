@@ -77,12 +77,28 @@ const promptUser = () => {
         {
           type: 'input',
           name: 'userName',
-          message: 'Username: '
+          message: 'Username: ',
+          validate: input => {
+            if (input) {
+              return true;
+            } else {
+              console.log('You need to enter a username!');
+              return false;
+            }
+          }
         },
         {
           type: 'input',
           name: 'email',
-          message: 'email: '
+          message: 'email: ',
+          validate: input => {
+            if (input) {
+              return true;
+            } else {
+              console.log('You need to enter an email!');
+              return false;
+            }
+          }
         }
     ])
 };
