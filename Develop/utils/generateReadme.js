@@ -1,44 +1,63 @@
 const fs=require('fs');
 
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+generateUsage=data=>{
+  if (data.use)
+    return `
+## Usage
+${data.use}
+    `;
+  else
+   return '';
+};
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+generateCredits=data=>{
+  if (data.credits)
+  return `
+## Credits
+${data.credits}
+  `;
+else
+ return '';
+};
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+generateFeature=data=>{
+  if (data.feature)
+  return `
+## Feature
+${data.feature}
+  `;
+else
+ return '';
+};
+
+generateContribute=data=>{
+  if (data.contribute)
+  return `
+## How to contribute
+${data.contribute}
+  `;
+else
+ return '';
+};
 
 // TODO: Create a function to generate markdown for README
 const generateReadme = data => {
   return `
-       # ${data.title}
+# ${data.title}
            
-       ## Description
-       ${data.disc}
-             
-       ## Installation
-       ${data.install}
- 
-       ## Usage
-       ${data.use}
- 
-       ## Credits
-       ${data.credits}
- 
-       ## License
-       ${data.license} 
+## Description
+${data.disc}
       
-       ## Feature
-       ${data.feature}
-     
-       ## How to contribute
-       ${data.contribute}
- 
+## Installation
+${data.install}
+${generateUsage(data)}
+${generateCredits(data)}
+## License
+${data.license} 
+${generateFeature(data)}
+${generateContribute(data)}
+
   `;
 };
 
