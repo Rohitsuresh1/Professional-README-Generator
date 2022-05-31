@@ -23,6 +23,9 @@ This is an app that creates dynamic README document using command line prompts.
 ## Installation
 You can access the app by cloning the repository from https://github.com/Rohitsuresh1/Professional-README-Generator
 
+## Link to walkthrough video
+https://1drv.ms/v/s!AsYlxac97Fv_kUBqJCV9Vx5wnlOS?e=RmDShw
+
 <a name="usage"></a>
 
 ## Usage
