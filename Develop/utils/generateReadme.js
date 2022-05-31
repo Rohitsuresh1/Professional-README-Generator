@@ -3,16 +3,16 @@ const fs=require('fs');
 generateBadge=data=>{
   const l=data.license;
   if(l==='MIT'){
-    return `![![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+    return `![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   }
   else if (l==='Boost'){
-    return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
+    return `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
   }
   else if (l==='Apache'){
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+    return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
   else if (l==='BSD'){
-    return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+    return `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
   }
   else if (l==='Other'||l==='None')
     return '';
@@ -56,7 +56,6 @@ if(data.credits)
   contentTable.push("- [Credits](#credits)");
 else
   contentTable.push(" ");
-console.log(contentTable);
 
   return ` 
 ## Table of Contents

@@ -63,6 +63,6 @@ Starter code was provided to us.
     
 
 ## Screenshot
-![Screen Shot]()
-![Screen Shot]()
-![Screen Shot]()
+![Screen Shot](./assets/images/Screen%20Shot%202022-05-30%20at%2010.24.53%20PM.png)
+![Screen Shot](./assets/images/Screen%20Shot%202022-05-30%20at%2010.25.04%20PM.png)
+![Screen Shot](./assets/images/Screen%20Shot%202022-05-30%20at%2010.25.50%20PM.png)
